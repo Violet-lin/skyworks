@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="headWrap">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="shortcuts.html">Shortcuts</a></li>
+            <!-- <li><a href="artboard.html">Artboard</a></li> -->
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="shortcuts.html">Shortcuts</a></li>
+            <!-- <li><a href="artboard.html">Artboard</a></li> -->
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="bodyWrap">
+      <H2>Keyboard Shortcuts</H2>
+      <div class="instruct">
+        <div class="hero">
+          <!-- <img class="hero-Img" src="img\manual\hero_01.png" alt=""> -->
+          <!-- <br> -->
+          Searching for the tools you want from top menu bar?
+          <br>Keyboard shortcut might save you some time on frequent-use command.
+        </div>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header scT01"> <i class="fa fa-folder-o" aria-hidden="true"></i>
+              Group layers. <span class ="scKey01 toolTip">cmd+G</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey01 toolTip">cmd+G</span>
+              <p>Select the layers that you want to group, and <span class=toolTip> cmd+G.</span></p>
+              <br><img class="z-depth-4 responsive-img responsive-img" src="img\shortcuts\group.gif" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT02"> <i class="material-icons">photo_size_select_small</i>
+              Select all. <span class ="scKey02 toolTip">cmd+A</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey02 toolTip">cmd+A</span>
+              <p>Create a selection marquee by <span class=toolTip> cmd+A.</span></p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT03"> <i class="material-icons">photo_size_select_small</i>
+              Deselect all. <span class ="scKey03 toolTip">cmd+D</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey03 toolTip">cmd+D</span>
+              <p>Removing all active marquee selections.
+              </p>
+              <p>Especially when you realised brush, fill or gradient tools are not working.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT04"> <i class="fa fa-arrows" aria-hidden="true"></i>
+              Free Transform. <span class ="scKey04 toolTip">cmd+T</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey04 toolTip">cmd+T</span>
+              <p>Free transform and resize.
+              It is also very useful to get values like x, y, width, height for DCO and Bespoke banners.
+              You can set to read from different reference point, <span class="highlight">regX/regY</span>. (E.g top-left or center-middle)
+              <br><img class="z-depth-4 responsive-img responsive-img" src="img\tips\refPt.png" alt="">
+            </p></div>
+          </li>
+          <li>
+            <div class="collapsible-header scT05"> <i class="material-icons">format_color_fill</i>
+              Fill background background. <span class ="scKey05 toolTip">cmd+backspace</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey05 toolTip">cmd+backspace</span>
+              <p>Fill background background.<br>
+                <br><img class="z-depth-4 responsive-img" src="img\tips\fill_background.png" alt=""><img class="responsive-img" src="img\tips\fill_background_key.png" alt="">
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT06"> <i class="material-icons">format_color_fill</i>
+              Fill foreground background. <span class ="scKey06 toolTip">option+backspace</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey06 toolTip">option+backspace</span>
+              <p>Fill foreground background.<br>
+                <br><img class="z-depth-4 responsive-img" src="img\tips\fill_foreground.png" alt=""><img class="responsive-img" src="img\tips\fill_foreground_key.png" alt="">
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT08"> <i class="material-icons">palette</i>
+              Swap Foreground / Background colour. <span class ="scKey08 toolTip">X</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey08 toolTip">X</span>
+              <p>Swap Foreground / Background colour.
+                <br><img class="z-depth-4 responsive-img" src="img\tips\switch1.png" alt=""><img class="z-depth-4 responsive-img" src="img\tips\switch2.png" alt="">
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT07"> <i class="material-icons">palette</i>
+              Default colours. <span class ="scKey07 toolTip">D</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey07 toolTip">D</span>
+              <p>Default colours.
+                <br>Foreground: Black / Background: White.
+                <br><img class="z-depth-4 responsive-img" src="img\tips\default.png" alt="">
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT09"> <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+              Toggle lock and unlock on selected layer(s). <span class ="scKey09 toolTip">cmd+/</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey09 toolTip">cmd+/</span>
+              <p>Select layers you would like to lock and unlock, and press <span class ="toolTip">cmd+/</span>.
+                <br><img class="z-depth-4 responsive-img" src="img\01.png" alt="">
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT10"> <i class="fa fa-arrows" aria-hidden="true"></i>
+              Move selection 1 pixel.
+              <span class ="scKey10 toolTip">Arrow keys</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey10 toolTip">Arrow keys</span>
+              <p>Move selection 1 pixel</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header scT11"> <i class="fa fa-arrows" aria-hidden="true"></i>
+              Move selection 10 pixels.
+              <span class ="scKey11 toolTip">shift + arrow keys</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey11 toolTip">shift + arrow keys</span>
+              <p>For every <span class ="toolTip">shift + arrow keys, </span>selection(s) are moved 10 pixel.
+                <br>You don't have to count anymore when moving 320 to 300.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header scT12"> <i class="fa fa-floppy-o" aria-hidden="true"></i>
+              Save for Web.
+              <span class ="scKey12 toolTip">cmd+option+shift+s</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey12 toolTip">cmd+option+shift+s</span>
+              <p>Save for Web allows you to select file formats to export (jpg, png and gif),
+                <br>customised transparency, quality, file size and etc.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT13"> <i class="fa fa-clone" aria-hidden="true"></i>
+              Duplicate selections.
+              <span class ="scKey13 toolTip">cmd+J</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey13 toolTip">cmd+J</span>
+              <p>Duplicate selections. Create a new layer from selected layer(s) or selected marquee area(s)</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header scT14"> <i class="fa fa-clone" aria-hidden="true"></i>
+              Cut selections, and create a new layer.
+              <span class ="scKey14 toolTip">cmd+shift+J</span>
+            </div>
+            <div class="collapsible-body">
+              <span class ="scKey14 toolTip">cmd+shift+J</span>
+              <p>Similar as <span class ="scKey13 toolTip">cmd+J</span>, just that it cut selections.
+                <br>Create a new layer from selected layer(s) or selected marquee area(s)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer grey lighten-3">
+    <div class="footer-copyright grey darken-1">
+      <div class="container">
+      Last edited 21 Sept © 2017
+      <a class="grey-text text-lighten-4 right">Sky Works</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+     $(".button-collapse").sideNav();
+  </script>
+</body>
+</html>

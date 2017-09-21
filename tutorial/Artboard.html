@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="headWrap">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="shortcuts.html">Shortcuts</a></li>
+            <!-- <li><a href="artboard.html">Artboard</a></li> -->
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="shortcuts.html">Shortcuts</a></li>
+            <!-- <li><a href="artboard.html">Artboard</a></li> -->
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="bodyWrap">
+      <H2>Artboard to Group layers</H2>
+      <div class="instruct">
+        <div class="hero">
+          <img class="hero-Img responsive-img" src="img\manual\hero_01.png" alt="">
+          <br>How to convert Photoshop files in Artboard format to regular Group layers (Manually)
+          <div class="describ">Sometimes you need to export elements easily
+            <br>but they just does not work the way you want them to be</div>
+        </div>
+        <div class="sections">1. If you have any locked <img class="imgIcon" src="img\manual\01.png" alt=""> layers in the files, select all layers and press <span class="toolTip">cmd+/</span> twice.
+          <br>By pressing cmd+/ twice, it enables all layers to be unlocked.
+        </div>
+        <div class="sections">2. Select all Artboard, select Move Tool(V), <img class="imgIcon" src="img\manual\02.png" alt=""> and click either <span class="toolTip alignLeft">Align left edges</span> or <span class="toolTip alignRight">Align right edges.</span> Both works.
+          <br><img class="responsive-img" src="img\manual\02a.png" alt="">
+        </div>
+        <div class="sections highlight"> <strong>You can choose to work from here :)</strong> <br/>Or if you prefer to work in groups, continue to Step 3.</div>
+        <div class="sections">3. Group <span class="toolTip">cmd+G</span> all layers within Artboard 1. <br> <img class="responsive-img" src="img\manual\03.gif" alt=""></div>
+        <div class="sections">4. Go on to  Artboard 2, Artboard 3 and so on.</div>
+        <div class="sections">5. After you have complete all Artboard, you should have 1 group in each Artboard.</div>
+        <div class="sections">6. <span class="toolTip">cmd+a</span> and select Add layer mask on group 1 <br> <img class="responsive-img" src="img\manual\06.gif" alt=""></div>
+        <div class="sections">7. Select all layers and choose <span class="toolTip">Ungroup Artboards</span>. <br> <img class="responsive-img" src="img\manual\07.png" alt=""></div>
+        <div class="sections">8. Keep only the Group 1 open and hide the rest of the Groups. <br> <img class="responsive-img" src="img\manual\08.png" alt=""></div>
+        <div class="sections">9. Image > Trim <br> <img class="responsive-img" src="img\manual\09.png" alt=""></div>
+        <div class="sections">All sides <br> <img class="responsive-img" src="img\manual\09b.png" alt=""></div>
+        <div class="sections">10. Completed. There you have your psd file without Artboard function <br> <img class="responsive-img" src="img\manual\10.gif" alt=""></div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer grey lighten-3">
+    <div class="footer-copyright grey darken-1">
+      <div class="container">
+      Last edited 21 Sept © 2017
+      <a class="grey-text text-lighten-4 right">Sky Works</a>
+      </div>
+    </div>
+  </footer>
+  <!-- <div id="footer">last edited 17 Aug 2017</div> -->
+  <script>
+     $(".button-collapse").sideNav();
+  </script>
+</body>
+</html>

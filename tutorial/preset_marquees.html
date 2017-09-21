@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="headWrap">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="shortcuts.html">Shortcuts</a></li>
+          <!-- <li><a href="artboard.html">Artboard</a></li> -->
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="shortcuts.html">Shortcuts</a></li>
+          <!-- <li><a href="artboard.html">Artboard</a></li> -->
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="bodyWrap">
+    <H2>Common Tips and examples</H2>
+    <div class="instruct">
+      <div class="sections hero">
+        <!-- <img class="hero-Img" src="img\manual\hero_01.png" alt=""> -->
+        <!-- <br> -->
+        While exporting images for your development, you realised that some of the files
+        <br>were not as straightforward as you imagine.
+      </div>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
+            Now TV tickets. Remove clipping mask
+          </div>
+          <div class="collapsible-body">
+            Place your mouse in between the TV show and ticket mask.
+            <br>Hold <span class="toolTip">Alt</span> and click between the two layers to remove/add clipping Mask.
+            <br><img src="img\tips\removeCM_NTV.gif" alt="">
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
+            Find x &amp; y position for images (for DCO and Bespoke Banner)
+          </div>
+          <div class="collapsible-body">To get correct x and y position for DCO banners (Headline, CTA and images position).
+            <br><span class="toolTip">cmd+T</span> then
+            <br><img src="img\tips\refPt.png" alt="">
+            <br>You can select reference point by clicking
+            <br>"top-left", "top-center" or "middle-center"
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
+            Converting Artboards to Groups
+          </div>
+          <div class="collapsible-body">
+          <a href="artboard.html">Manual</a><br>
+          Auto
+          <!-- <a href="Artboard"></a> -->
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
+            Find x &amp; y position for texts (for DCO and Bespoke Banner)
+          </div>
+          <div class="collapsible-body">Draw an area, if the textarea is bigger than the actual texts</div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+<footer class="page-footer grey lighten-3">
+  <div class="footer-copyright grey darken-1">
+    <div class="container">
+    Last edited 21 Sept © 2017
+    <a class="grey-text text-lighten-4 right">Sky Works</a>
+    </div>
+  </div>
+</footer>
+  <!-- <div id="footer">last edited 17 Aug 2017</div> -->
+  <script>
+     $(".button-collapse").sideNav();
+  </script>
+</body>
+</html>

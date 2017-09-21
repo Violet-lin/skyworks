@@ -1,0 +1,122 @@
+/*============*/
+/*General*/
+/*============*/
+body {
+  font-family: "HelveticaNeue-light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/*body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}*/
+main {
+  flex: 1 0 auto;
+}
+h2, h3 {
+  text-align: center;
+}
+img {
+  /*margin-top: 20px;*/
+}
+.imgIcon {
+  vertical-align: middle;
+  margin-top: 0;
+}
+.toolTip {
+  color: #e67700;
+}
+.highlight {
+  color: maroon;
+}
+.disabled {
+  color: grey;
+}
+/*============*/
+/*Nav*/
+/*============*/
+nav {
+  /*background-color: #14233B;*/
+  background: linear-gradient(to right, #f6871f, #ed1c24, #a43383, #0052a4);
+  background: -moz-linear-gradient(right, #f6871f, #ed1c24, #a43383, #0052a4);
+  /*14233B*/
+  /*3D70B7*/
+  /*52C9F1*/
+}
+.brandLogo {
+  vertical-align: middle;
+  /*margin-top: 10px !important;*/
+  /*margin-left: 50px;*/
+}
+/*============*/
+/*Home Page*/
+/*============*/
+.parallax-container {
+  height: 50px;
+}
+/*============*/
+/*Hero image*/
+/*============*/
+.hero{
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 50px;
+  margin: 12px;
+}
+.hero .describ{
+  font-size: smaller;
+  margin-top: 15px;
+}
+.hero-Img{
+  margin-top:20;
+  margin-bottom: 40px;
+}
+/*============*/
+/*Wrapper*/
+/*============*/
+.instruct {
+  margin: auto;
+  width: 70%;
+  max-width: 1000px;
+  padding: 10px;
+}
+.sections{
+  padding: 20px 50px;
+  margin: 12px;
+  border: 1px solid #dadada;
+  /*border-radius: 5px;*/
+}
+.sections:nth-child(odd){
+  background: #fafafa;
+}
+/*============*/
+/*cards*/
+/*============*/
+.center-cols > .col {
+  float:none; /* disable the float */
+  display: inline-block; /* make blocks inline-block */
+  text-align: initial; /* restore text-align to default */
+}
+.card .card-image .card-title{
+  padding: 10px;
+  text-shadow: 1px 1px #6D6D6D;
+}
+/*============*/
+/*collapsible*/
+/*============*/
+.collapsible-header:nth-child(odd){
+  background: #fafafa;
+}
+/*============*/
+/*Footer*/
+/*============*/
+#footer {
+  height: 15px;
+  /*background-color: #d8c7e1;*/
+  position: relative;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+}
