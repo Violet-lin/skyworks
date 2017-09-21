@@ -104,6 +104,18 @@ nav {
   padding: 10px;
   text-shadow: 1px 1px #6D6D6D;
 }
+.card .card-title {
+    font-size: 2vh;
+}
+.card-title {
+    margin-bottom: 0px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    /*color: #ffab40;*/
+     margin-right: 0px;
+}
+
 /*============*/
 /*collapsible*/
 /*============*/
