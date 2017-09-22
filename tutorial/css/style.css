@@ -102,6 +102,18 @@ nav {
 .sections:nth-child(odd){
   background: #fafafa;
 }
+.promoSection{
+  margin-bottom: 50px;
+}
+.promoSection .fa{
+  font-size: 300%;
+  margin: 20px;
+}
+.promoSection .promoTitle{
+  font-weight: bold;
+  font-size: 120%;
+  /*padding-bottom: 10px;*/
+}
 /*============*/
 /*cards*/
 /*============*/
