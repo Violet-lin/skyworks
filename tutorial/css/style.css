@@ -57,7 +57,7 @@ nav {
   height: 50px;
 }
 .tileBG {
-  background-image: url("../img/title_bg.jpg");
+  background-image: url("../img/tile_bg.png");
   background-repeat: repeat-x;
   height: 480px;
 }
