@@ -50,10 +50,10 @@
         </div>
         <div class="sections">2a. Select all Artboard,<br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\02a.png" alt=""></div>
         <div class="sections">2b. Select Move Tool(V). <img class="imgIcon" src="img\manual\2017\02.png" alt="">
-          <br><br>• If the artboards are in horizontal format, click either <span class="toolTip alignLeft">Align left edges</span> or <span class="toolTip alignRight">Align right edges.</span>
-          <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\02b_left.png" alt="">
-          <br><br>• If the artboards are in vertical format, click either <span class="toolTip alignLeft">Align top edges</span> or <span class="toolTip alignRight">Align bottom edges</span> instead.
-          <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\02b_top.png" alt="">
+          <br><br>• If the artboards are in horizontal format, click either <span id="txtAlignLeft" class="toolTip alignLeft">Align left edges</span> or <span id="txtAlignRight" class="toolTip alignRight">Align right edges.</span>
+          <br><br><img id="picBox1" class="z-depth-4 responsive-img" src="img\manual\2017\02b_left.png" alt="">
+          <br><br>• If the artboards are in vertical format, click either <span id="txtAlignTop" class="toolTip alignTop">Align top edges</span> or <span id="txtAlignBottom" class="toolTip alignBot">Align bottom edges</span> instead.
+          <br><br><img id="picBox2" class="z-depth-4 responsive-img" src="img\manual\2017\02b_top.png" alt="">
           <br><br>This should combine the artboards into one.
         </div>
         <div class="sections highlight"> <strong>You can choose to work from here :)</strong> <br/>Or if you prefer to work in groups, continue to Step 3.</div>
@@ -79,6 +79,20 @@
   </footer>
   <script>
      $(".button-collapse").sideNav();
+     $(document).ready(function(){
+         $('#txtAlignLeft').hover(function(){
+             $('#picBox1').attr('src', 'img\\manual\\2017\\02b_left.png');
+         });
+         $('#txtAlignRight').hover(function(){
+             $('#picBox1').attr('src', 'img\\manual\\2017\\02b_right.png');
+         });
+         $('#txtAlignTop').hover(function(){
+             $('#picBox2').attr('src', 'img\\manual\\2017\\02b_top.png');
+         });
+         $('#txtAlignBottom').hover(function(){
+             $('#picBox2').attr('src', 'img\\manual\\2017\\02b_bottom.png');
+         });
+     })
   </script>
 </body>
 </html>
