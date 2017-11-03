@@ -1,98 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/materialize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Skyworks Photoshop Tutorial</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Skyworks Photoshop Tutorial</title>
 </head>
+
 <body>
-  <header>
-    <div class="headWrap">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="tips.html">Tips</a></li>
-            <li><a href="shortcuts.html">Shortcuts</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="tips.html">Tips</a></li>
-            <li><a href="shortcuts.html">Shortcuts</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="bodyWrap">
-      <H2>Artboard to Group layers</H2>
-      <div class="instruct">
-        <div class="hero">
-          <img class="hero-Img responsive-img" src="img\manual\hero_01.png" alt="">
-          <br>How to convert Photoshop files in Artboard format to regular Group layers (Manually)
-          <div class="describ">Sometimes you need to export elements easily without Artboard,
-            <br>but they just does not work the way you want them to be.</div>
-        </div>
-        <div class="sections">1. If you have any locked <img class="imgIcon" src="img\manual\2017\01.png" alt=""> layers in the files, select all layers and press <span class="toolTip">cmd+/</span> twice.
-          <br>By pressing cmd+/ twice, it enables all layers to be unlocked.
-        </div>
-        <div class="sections">2a. Select all Artboard,<br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\02a.png" alt=""></div>
-        <div class="sections">2b. Select Move Tool(V). <img class="imgIcon" src="img\manual\2017\02.png" alt="">
-          <br><br>• If the artboards are in horizontal format, click either <span id="txtAlignLeft" class="toolTip alignLeft">Align left edges</span> or <span id="txtAlignRight" class="toolTip alignRight">Align right edges.</span>
-          <br><br><img id="picBox1" class="z-depth-4 responsive-img" src="img\manual\2017\02b_left.png" alt="">
-          <br><br>• If the artboards are in vertical format, click either <span id="txtAlignTop" class="toolTip alignTop">Align top edges</span> or <span id="txtAlignBottom" class="toolTip alignBot">Align bottom edges</span> instead.
-          <br><br><img id="picBox2" class="z-depth-4 responsive-img" src="img\manual\2017\02b_top.png" alt="">
-          <br><br>This should combine the artboards into one.
-        </div>
-        <div class="sections highlight"> <strong>You can choose to work from here :)</strong> <br/>Or if you prefer to work in groups, continue to Step 3.</div>
-        <div class="sections">3. Group <span class="toolTip">cmd+G</span> all layers within Artboard 1. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\03.gif" alt=""></div>
-        <div class="sections">4. Go on to group Artboard 2, Artboard 3 and so on.</div>
-        <div class="sections">5. After you have complete all Artboard, you should have 1 group in each Artboard. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\05.png" alt=""></div>
-        <div class="sections">6. <span class="toolTip">cmd+a</span> and select Add layer mask on group 1. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\06.gif" alt=""></div>
-        <div class="sections">7. Select all layers and choose <span class="toolTip">Ungroup Artboards.</span>. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\07.png" alt=""></div>
-        <div class="sections">8. Keep only the Group 1 open and hide the rest of the Groups. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\08.png" alt=""></div>
-        <div class="sections">9. Image > Trim <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\09.png" alt=""></div>
-        <div class="sections">10. All sides. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\09b.png" alt=""></div>
-        <div class="sections">11. Completed. There you have a psd file without Artboard function. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\10.gif" alt=""></div>
-      </div>
-    </div>
-  </main>
-  <footer class="page-footer grey lighten-3">
-    <div class="footer-copyright grey darken-1">
-      <div class="container">
-      © Last edited 18 Oct 2017
-      <a class="grey-text text-lighten-4 right">Sky Works</a>
-      </div>
-    </div>
-  </footer>
-  <script>
-     $(".button-collapse").sideNav();
-     $(document).ready(function(){
-         $('#txtAlignLeft').hover(function(){
-             $('#picBox1').attr('src', 'img\\manual\\2017\\02b_left.png');
-         });
-         $('#txtAlignRight').hover(function(){
-             $('#picBox1').attr('src', 'img\\manual\\2017\\02b_right.png');
-         });
-         $('#txtAlignTop').hover(function(){
-             $('#picBox2').attr('src', 'img\\manual\\2017\\02b_top.png');
-         });
-         $('#txtAlignBottom').hover(function(){
-             $('#picBox2').attr('src', 'img\\manual\\2017\\02b_bottom.png');
-         });
-     })
-  </script>
+	<header>
+		<div class="headWrap">
+			<nav>
+				<div class="nav-wrapper">
+					<a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="index.html">Main</a></li>
+						<li><a href="tips.html">Tips</a></li>
+						<li><a href="shortcuts.html">Shortcuts</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">Main</a></li>
+						<li><a href="tips.html">Tips</a></li>
+						<li><a href="shortcuts.html">Shortcuts</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="bodyWrap">
+			<H2>Artboard to Group layers</H2>
+			<div class="instruct">
+				<div class="hero">
+					<img class="hero-Img responsive-img" src="img\manual\hero_01.png" alt="">
+					<br>How to convert Photoshop files in Artboard format to regular Group layers (Manually)
+					<div class="describ">Sometimes you need to export elements easily without Artboard,
+						<br>but they just does not work the way you want them to be.</div>
+				</div>
+				<div class="fixed">Photoshop CC<br><input type="checkbox" id="versions" checked data-toggle="toggle" data-on="2017" data-off="2015" data-onstyle="primary" data-offstyle="info"></div>
+				<div class="sections">1. If you have any locked <img class="imgIcon" src="img\manual\2017\01.png" alt=""> layers in the files, select all layers and press <span class="toolTip">cmd+/</span> twice.
+					<br>By pressing cmd+/ twice, it enables all layers to be unlocked.
+				</div>
+				<div class="sections">2a. Select all Artboard,<br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\02a.png" alt=""></div>
+				<div class="sections">2b. Select Move Tool(V). <img class="imgIcon" src="img\manual\2017\02.png" alt="">
+					<br><br>• If the artboards are in horizontal format, click either <span id="txtAlignLeft" class="toolTip alignLeft">Align left edges</span> or <span id="txtAlignRight" class="toolTip alignRight">Align right edges.</span>
+					<br><br><img id="picBox1" class="z-depth-4 responsive-img" src="img\manual\2017\02b_left.png" alt="">
+					<br><br>• If the artboards are in vertical format, click either <span id="txtAlignTop" class="toolTip alignTop">Align top edges</span> or <span id="txtAlignBottom" class="toolTip alignBot">Align bottom edges</span> instead.
+					<br><br><img id="picBox2" class="z-depth-4 responsive-img" src="img\manual\2017\02b_top.png" alt="">
+					<br><br>This should combine the artboards into one.
+				</div>
+				<div class="sections highlight"> <strong>You can choose to work from here :)</strong> <br/>Or if you prefer to work in groups, continue to Step 3.</div>
+				<div class="sections">3. Group <span class="toolTip">cmd+G</span> all layers within Artboard 1. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\03.gif" alt=""></div>
+				<div class="sections">4. Go on to group Artboard 2, Artboard 3 and so on.</div>
+				<div class="sections">5. After you have complete all Artboard, you should have 1 group in each Artboard. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\05.png" alt=""></div>
+				<div class="sections">6. <span class="toolTip">cmd+a</span> and select Add layer mask on group 1. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\06.gif" alt=""></div>
+				<div class="sections">7. Select all layers and choose <span class="toolTip">Ungroup Artboards.</span>. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\07.png" alt=""></div>
+				<div class="sections">8. Keep only the Group 1 open and hide the rest of the Groups. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\08.png" alt=""></div>
+				<div class="sections">9. Image > Trim <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\09.png" alt=""></div>
+				<div class="sections">10. All sides. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\09b.png" alt=""></div>
+				<div class="sections">11. Completed. There you have a psd file without Artboard function. <br><br><img class="z-depth-4 responsive-img" src="img\manual\2017\10.gif" alt=""></div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer grey lighten-3">
+		<div class="footer-copyright grey darken-1">
+			<div class="container">
+				© Last edited 24 Oct 2017
+				<a class="grey-text text-lighten-4 right">Sky Works</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script>
+		$(".button-collapse").sideNav();
+		$(document).ready(function() {
+			$('#txtAlignLeft').hover(function() {
+				$('#picBox1').attr('src', 'img\\manual\\2017\\02b_left.png');
+			});
+			$('#txtAlignRight').hover(function() {
+				$('#picBox1').attr('src', 'img\\manual\\2017\\02b_right.png');
+			});
+			$('#txtAlignTop').hover(function() {
+				$('#picBox2').attr('src', 'img\\manual\\2017\\02b_top.png');
+			});
+			$('#txtAlignBottom').hover(function() {
+				$('#picBox2').attr('src', 'img\\manual\\2017\\02b_bottom.png');
+			});
+		})
+		$(function() {
+			$('#versions').change(function() {
+				if ($(this).prop('checked')) {
+					console.log("2017")
+					var imgs = document.getElementsByTagName("img");
+					for (var i = 0; i < imgs.length; i++) {
+						imgs[i].src = imgs[i].src.replace("img/manual/2015/", "img/manual/2017/");
+					}
+				} else {
+					console.log("2015")
+					var imgs = document.getElementsByTagName("img");
+					for (var i = 0; i < imgs.length; i++) {
+						imgs[i].src = imgs[i].src.replace("img/manual/2017/", "img/manual/2015/");
+					}
+				}
+			})
+		})
+	</script>
 </body>
 </html>

@@ -137,7 +137,15 @@ nav {
     /*color: #ffab40;*/
      margin-right: 0px;
 }
-
+/*============*/
+/*components*/
+/*============*/
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
 /*============*/
 /*collapsible*/
 /*============*/
