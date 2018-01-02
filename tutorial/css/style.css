@@ -34,6 +34,275 @@ img {
 .disabled {
   color: grey;
 }
+
+hr.style-two {
+  margin: 5px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.c-divider {
+  position: relative;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  margin-bottom: 19px;
+}
+
+.c-divider:after,
+.c-divider:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.c-divider:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to right,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  bottom: 0;
+  height: 1px;
+}
+
+.c-divider:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(at 50% 0,rgba(74,74,74,.15),transparent 40%);
+  top: 100%;
+  height: 10px;
+}
+
+.c-divider--top {
+  border-width: 1px 0 0;
+}
+
+.c-divider--top:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to right,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  bottom: 100%;
+}
+
+.c-divider--top:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(at 50% 100%,rgba(74,74,74,.15),transparent 40%);
+  top: -11px;
+}
+
+.c-divider--right {
+  border-width: 0 1px 1px 0;
+  margin-bottom: 0;
+}
+
+.c-divider--right:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to bottom,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  right: 0;
+}
+
+.c-divider--right:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(farthest-corner at 0 50%,rgba(74,74,74,.15),transparent 40%);
+  top: 0;
+  height: 100%;
+  width: 10px;
+  right: -10px;
+}
+
+.c-divider--left {
+  border-width: 0 0 1px 1px;
+  margin-bottom: 0;
+}
+
+.c-divider--left:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to bottom,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  left: 0;
+}
+
+.c-divider--left:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(farthest-corner at 100% 50%,rgba(74,74,74,.15),transparent 40%);
+  top: 0;
+  height: 100%;
+  width: 10px;
+  left: -10px;
+}
+
+.c-divider--large {
+  margin-bottom: 39px;
+}.c-divider {
+  position: relative;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  margin-bottom: 19px;
+}
+
+.c-divider:after,
+.c-divider:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.c-divider:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to right,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  bottom: 0;
+  height: 1px;
+}
+
+.c-divider:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(50% 0,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(at 50% 0,rgba(74,74,74,.15),transparent 40%);
+  top: 100%;
+  height: 10px;
+}
+
+.c-divider--top {
+  border-width: 1px 0 0;
+}
+
+.c-divider--top:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(left,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to right,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  bottom: 100%;
+}
+
+.c-divider--top:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(50% 100%,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(at 50% 100%,rgba(74,74,74,.15),transparent 40%);
+  top: -11px;
+}
+
+.c-divider--right {
+  border-width: 0 1px 1px 0;
+  margin-bottom: 0;
+}
+
+.c-divider--right:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to bottom,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  right: 0;
+}
+
+.c-divider--right:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(0 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(farthest-corner at 0 50%,rgba(74,74,74,.15),transparent 40%);
+  top: 0;
+  height: 100%;
+  width: 10px;
+  right: -10px;
+}
+
+.c-divider--left {
+  border-width: 0 0 1px 1px;
+  margin-bottom: 0;
+}
+
+.c-divider--left:before {
+  /*! autoprefixer: off */
+  background: silver;
+  background: -webkit-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -moz-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -ms-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: -o-linear-gradient(top,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  background: linear-gradient(to bottom,hsla(0,0%,75%,0),silver,hsla(0,0%,75%,0));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  left: 0;
+}
+
+.c-divider--left:after {
+  /*! autoprefixer: off */
+  background: -webkit-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -moz-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -ms-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: -o-radial-gradient(100% 50%,farthest-corner,rgba(74,74,74,.15),transparent 40%);
+  background: radial-gradient(farthest-corner at 100% 50%,rgba(74,74,74,.15),transparent 40%);
+  top: 0;
+  height: 100%;
+  width: 10px;
+  left: -10px;
+}
+
+.c-divider--large {
+  margin-bottom: 39px;
+}
+
 /*============*/
 /*Nav*/
 /*============*/
@@ -126,6 +395,11 @@ nav {
   padding: 10px;
   text-shadow: 1px 1px #6D6D6D;
 }
+
+.card .card-image img{
+  padding: 5px;
+}
+
 .card .card-title {
     font-size: 2vh;
 }
@@ -134,9 +408,15 @@ nav {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-    /*color: #ffab40;*/
-     margin-right: 0px;
+  color:#0073c5;   /*blue*/
+  margin-right: 0px;
 }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+  color:#0073c5;   /*blue*/
+  text-decoration: underline;
+}
+
 /*============*/
 /*components*/
 /*============*/
