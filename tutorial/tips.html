@@ -1,118 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/materialize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Skyworks Photoshop Tutorial</title>    
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Skyworks Photoshop Tutorial</title>
 </head>
+
 <body>
-  <header>
-    <div class="headWrap">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="tips.html">Tips</a></li>
-            <li><a href="shortcuts.html">Shortcuts</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="tips.html">Tips</a></li>
-            <li><a href="shortcuts.html">Shortcuts</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="bodyWrap">
-      <H3>Common tips and examples</H3>
-      <div class="instruct">
-        <div class="hero">
-          <!-- <img class="hero-Img" src="img\manual\hero_01.png" alt=""> -->
-          <!-- <br> -->
-          While exporting images for your development,
-          <br>you realised that some of the files were not as straightforward as you imagine.
-        </div>
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
-              Now TV tickets. Remove clipping mask.
-            </div>
-            <div class="collapsible-body">
-              Place your mouse in between the TV show and ticket mask.
-              <br>Hold <span class="toolTip">Alt</span> and click between the two layers to remove/add clipping Mask.
-              <br><img class="responsive-img" src="img\tips\removeCM_NTV.gif" alt="">
-              <br>The "holes" of the tickets are removed.
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
-              Find x &amp; y position for images. (For DCO and Bespoke Banner)
-            </div>
-            <div class="collapsible-body">To get correct x and y position for DCO banners (Headline, CTA and images position).
-              <br><span class="toolTip">cmd+T</span>
-              <br><img class="responsive-img" src="img\tips\refPt.png" alt="">
-              <p>It shows detail infomation of x, y, width, height and degree infomation of the item you selected.
-                <br>You can select reference point by clicking
-                <br>"top-left", "top-center" or "middle-center"
-              </p>
-              <p class="highlight">Reference point is equivalent to regX and regY in CreateJS.</p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
-              Converting Artboards to Groups.
-            </div>
-            <div class="collapsible-body">
-              <p><a href="artboard.html">Manual</a></p>
-              <p class="disabled">Auto (Coming soon)</p>
-              <!-- <a href="Artboard"></a> -->
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><!-- <i class="material-icons">place</i> -->
-              Find accurate x &amp; y position for Headline text. (For DCO and Bespoke Banner)
-            </div>
-            <div class="collapsible-body">
-              If textarea is bigger than the actual texts,
-              <br>
-              <p><img class="responsive-img" src="img\tips\textarea.png">
-                <br>reference point is taken for the whole textarea, and not just the actual sentence itself.
-              </p>
-              <p>Draw an area that is the same size of the sentence,
-                <br><br><img class="responsive-img" src="img\tips\textarea_draw.gif">
-              </p>
-              <p><span class="toolTip">cmd+T</span> to get the exact value of reference point (regX/regY).
-                <br><br><img class="responsive-img" src="img\tips\textarea_draw.png">
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <footer class="page-footer grey lighten-3">
-    <div class="footer-copyright grey darken-1">
-      <div class="container">
-      Last edited 21 Sept © 2017
-      <a class="grey-text text-lighten-4 right">Sky Works</a>
-      </div>
-    </div>
-  </footer>
-  <!-- <div id="footer">last edited 17 Aug 2017</div> -->
-  <script>
-     $(".button-collapse").sideNav();
-  </script>
+	<header>
+		<div class="headWrap">
+			<nav>
+				<div class="nav-wrapper">
+					<a href="index.html" class="brand-logo"><img class="brandLogo" src="img\ps.png" alt=""></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="tips.html">Tips</a></li>
+						<li><a href="shortcuts.html">Shortcuts</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="index.html">Main</a></li>
+						<li><a href="tips.html">Tips</a></li>
+						<li><a href="shortcuts.html">Shortcuts</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="bodyWrap">
+			<H3>Common tips and examples</H3>
+			<div class="instruct">
+				<div class="hero">
+					While exporting images for your development,
+					<br>you realised that some of the files were not as straightforward as you imagine.
+				</div>
+
+				<ul class="collapsible" data-collapsible="accordion">
+
+					<li>
+						<div class="collapsible-header">
+							Now TV tickets. Remove clipping mask.
+						</div>
+						<div class="collapsible-body">
+							Place your mouse in between the TV show and ticket mask.
+							<br>Hold <span class="toolTip">Alt</span> and click between the two layers to remove/add clipping Mask.
+							<br><img class="responsive-img" src="img\tips\removeCM_NTV.gif" alt="">
+							<br>The "holes" of the tickets are removed.
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							Quick export for La Liga.
+						</div>
+						<div class="collapsible-body">
+
+							<!-- Quicker way of exporting the badges for La Liga. -->
+
+
+
+						  The elements that we need for updating the badges are currently grouped in a folder marked in green.
+
+							When you are ready to export and update the content image.
+							<br><img class="responsive-img" src="img\tips\laliga_1.jpg" alt="">
+
+							<br><br>From the Layers panel, you can pick a filter type.
+							<br><img class="responsive-img" src="img\tips\laliga_2a.jpg" alt="">
+
+							<br><br>Select "Name" from the drop-down menu.
+							<br><img class="responsive-img" src="img\tips\laliga_2b.jpg" alt="">
+
+							<br><br>In the input box, search "img".
+							<br><img class="responsive-img" src="img\tips\laliga_3.jpg" alt="">
+
+							<br><br>Only the groups that we need are shown in the Layers panel.
+							Right-click and select "Quick Export as PNG"
+							<br><img class="responsive-img" src="img\tips\laliga_4.jpg" alt="">
+							<br><br>
+
+							Select the folder you would like to export the files to, and you can find the badges in the folder.
+							<br><img class="responsive-img" src="img\tips\laliga_6.jpg" alt="">
+
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							Converting Artboards to Groups.
+						</div>
+						<div class="collapsible-body">
+							<p><a href="artboard.html">Manual</a></p>
+							<p class="disabled">Auto</p>
+
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							Find x &amp; y position for images. (For DCO and Bespoke Banner)
+						</div>
+						<div class="collapsible-body">To get correct x and y position for DCO banners (Headline, CTA and images position).
+							<br><span class="toolTip">cmd+T</span>
+							<br><img class="responsive-img" src="img\tips\refPt.png" alt="">
+							<p>It shows detail infomation of x, y, width, height and degree infomation of the item you selected.
+								<br>You can select reference point by clicking
+								<br>"top-left", "top-center" or "middle-center"
+							</p>
+							<p class="highlight">Reference point is equivalent to regX and regY in CreateJS.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							<!-- <i class="material-icons">place</i> -->
+							Find accurate x &amp; y position for Headline text. (For DCO and Bespoke Banner)
+						</div>
+						<div class="collapsible-body">
+							If textarea is bigger than the actual texts,
+							<br>
+							<p><img class="responsive-img" src="img\tips\textarea.png">
+								<br>reference point is taken for the whole textarea, and not just the actual sentence itself.
+							</p>
+							<p>Draw an area that is the same size of the sentence,
+								<br><br><img class="responsive-img" src="img\tips\textarea_draw.gif">
+							</p>
+							<p><span class="toolTip">cmd+T</span> to get the exact value of reference point (regX/regY).
+								<br><br><img class="responsive-img" src="img\tips\textarea_draw.png">
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer grey lighten-3">
+		<div class="footer-copyright grey darken-1">
+			<div class="container">
+				Last edited 27 Feb © 2017
+				<a class="grey-text text-lighten-4 right">Sky Works</a>
+			</div>
+		</div>
+	</footer>
+	<!-- <div id="footer">last edited 17 Aug 2017</div> -->
+	<script>
+		$(".button-collapse").sideNav();
+	</script>
 </body>
+
 </html>
